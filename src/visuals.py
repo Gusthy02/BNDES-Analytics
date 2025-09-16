@@ -2,8 +2,7 @@ import plotly.express as px
 import pandas as pd
 
 def plot_by_sector(df: pd.DataFrame):
-    '''Bar chart: investments by sector'''
-
+    """Bar chart: investments by sector"""
     return px.bar(
         df,
         x="Setor",
@@ -14,8 +13,7 @@ def plot_by_sector(df: pd.DataFrame):
     )
 
 def plot_over_time(df: pd.DataFrame):
-    ''' Line chart: investments over time'''
-
+    """Line chart: investments over time"""
     return px.line(
         df,
         x='Ano',
@@ -26,8 +24,7 @@ def plot_over_time(df: pd.DataFrame):
     )
 
 def plot_by_state(df: pd.DataFrame):
-    '''Choropleth: investments by Brazilian state (UF)'''
-    
+    """Choropleth: investments by Brazilian state (UF)"""
     return px.choropleth(
         df,
         geojson='https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson',
