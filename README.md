@@ -1,3 +1,4 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=FCC009&height=180&section=header&animation=twinkling"/>
 
 # 📊 BNDES Data Analytics  
 
